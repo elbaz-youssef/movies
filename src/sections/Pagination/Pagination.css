@@ -1,0 +1,12 @@
+.pagination .page-item {
+    cursor: pointer;
+    border-radius: var(--main-border-radius) !important;
+}
+
+.pagination .page-item span {
+    color: #1C8ADB;
+}
+.pagination .page-item.active span {
+    background-color: #1C8ADB !important;
+    color: #fff;
+}

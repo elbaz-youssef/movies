@@ -1,0 +1,16 @@
+.movies-title {
+    position: relative;
+    width: fit-content;
+    font-size: 18px;
+}
+.movies-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    /* background-color: #a0f; */
+    background-color: #1C8ADB;
+    
+}

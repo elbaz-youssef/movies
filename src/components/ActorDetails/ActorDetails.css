@@ -1,0 +1,23 @@
+.actor-details .actor-img {
+    min-width: 200px;
+    max-width: 350px;
+    height: 400px;
+}
+.actor-details .actor-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.actor-details .actor-content .overview {  
+    color: #999;
+}
+
+@media(max-width: 300px) {
+    .actor-movies,.movies-recommended {
+        width: 100%;
+    }
+    .actor-details .actor-img {
+        width: 200px !important;
+    }
+}

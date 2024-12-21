@@ -1,0 +1,65 @@
+.movie {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    padding: 0 !important;
+    box-shadow: 0px 1px 20px rgba(255,255,255,0.1);
+}
+
+@media ((min-width: 380px) and (max-width: 600px)) {
+    .movie-col {
+        width: 48.5% !important;
+    }
+}
+
+.movie img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0;
+}
+
+/* @media (min-width: 300px) And (max-width: 576px) {
+    .movie {
+        width: 300px;
+    }
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.movie .overlay .year {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.movie:hover .overlay .year {
+    opacity: 1;
+}
+.movie .overlay .movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.overlay:hover .movie-info {
+    background-color: transparent;
+}
+.movie .overlay .movie-info * {
+    color: #212121;
+    transition: color 0.3s;
+}
+.movie .overlay:hover .movie-info * {
+    color: #fff;
+}
+.movie .title {
+    font-size: 15px;
+}
